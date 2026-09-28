@@ -1,0 +1,10 @@
+config_label,context_tokens,decode_AI,bottleneck,measured_tps,pct_bandwidth_ceiling
+chunks0_tok256,203,0.998,bandwidth,30.4,82%
+chunks3_tok256,971,0.992,bandwidth,30.3,82%
+chunks3_tok400,1403,0.989,bandwidth,30.0,81%
+chunks5_tok256,1483,0.988,bandwidth,30.0,81%
+chunks5_tok400,2203,0.982,bandwidth,29.9,81%
+chunks10_tok256,2763,0.978,bandwidth,29.6,81%
+chunks10_tok400,4203,0.967,bandwidth,29.4,81%
+chunks20_tok256,5323,0.958,bandwidth,29.0,81%
+chunks20_tok400,8203,0.937,bandwidth,28.5,81%

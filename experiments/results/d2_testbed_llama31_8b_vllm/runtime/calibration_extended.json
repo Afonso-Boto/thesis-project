@@ -1,0 +1,120 @@
+{
+  "summary": {
+    "regime_id": "d2_testbed_llama31_8b_vllm",
+    "baseline_tps": 30.402015287587805,
+    "stress_threshold_context_tokens": 9843,
+    "n_sessions_calibrated": 900
+  },
+  "prefill_regression": {
+    "slope_ms_per_token": 0.2741,
+    "intercept_ms": -20.96,
+    "r_squared": 0.9985,
+    "n": 900,
+    "note": "linear fit expected (compute-bound prefill). R\u00b2 < 0.9 may indicate memory pressure at high context lengths."
+  },
+  "decode_summary": {
+    "mean_tps": 29.67,
+    "std_tps": 0.59,
+    "cv": 0.02,
+    "tps_vs_prefill_slope": -0.000247,
+    "tps_vs_prefill_r_squared": 0.9855,
+    "n": 900,
+    "note": "tps should be approximately constant (memory-bound decode). Negative slope vs prefill length indicates memory pressure."
+  },
+  "throughput_curve": {
+    "curve_points": [
+      {
+        "config_label": "chunks0_tok256",
+        "mean_prefill_tokens": 203.03,
+        "mean_tps": 30.402015287587805,
+        "tps_std": 0.030805687737980526,
+        "n_sessions": 100,
+        "chunks_per_step": 0,
+        "below_threshold": false
+      },
+      {
+        "config_label": "chunks3_tok256",
+        "mean_prefill_tokens": 971.03,
+        "mean_tps": 30.25589256303839,
+        "tps_std": 0.008647447426486146,
+        "n_sessions": 100,
+        "chunks_per_step": 3,
+        "below_threshold": false
+      },
+      {
+        "config_label": "chunks3_tok400",
+        "mean_prefill_tokens": 1403.03,
+        "mean_tps": 30.037234525406966,
+        "tps_std": 0.007749501484315215,
+        "n_sessions": 100,
+        "chunks_per_step": 3,
+        "below_threshold": false
+      },
+      {
+        "config_label": "chunks5_tok256",
+        "mean_prefill_tokens": 1483.03,
+        "mean_tps": 30.019343674902892,
+        "tps_std": 0.007151079639232281,
+        "n_sessions": 100,
+        "chunks_per_step": 5,
+        "below_threshold": false
+      },
+      {
+        "config_label": "chunks5_tok400",
+        "mean_prefill_tokens": 2203.03,
+        "mean_tps": 29.885864784648746,
+        "tps_std": 0.012776504142366927,
+        "n_sessions": 100,
+        "chunks_per_step": 5,
+        "below_threshold": false
+      },
+      {
+        "config_label": "chunks10_tok256",
+        "mean_prefill_tokens": 2763.03,
+        "mean_tps": 29.5701842071055,
+        "tps_std": 0.007017587526240843,
+        "n_sessions": 100,
+        "chunks_per_step": 10,
+        "below_threshold": false
+      },
+      {
+        "config_label": "chunks10_tok400",
+        "mean_prefill_tokens": 4203.03,
+        "mean_tps": 29.354233764739337,
+        "tps_std": 0.016970441090062117,
+        "n_sessions": 100,
+        "chunks_per_step": 10,
+        "below_threshold": false
+      },
+      {
+        "config_label": "chunks20_tok256",
+        "mean_prefill_tokens": 5323.03,
+        "mean_tps": 29.033180687268413,
+        "tps_std": 0.008701680772723186,
+        "n_sessions": 100,
+        "chunks_per_step": 20,
+        "below_threshold": false
+      },
+      {
+        "config_label": "chunks20_tok400",
+        "mean_prefill_tokens": 8203.03,
+        "mean_tps": 28.453682314770354,
+        "tps_std": 0.02102745296943352,
+        "n_sessions": 100,
+        "chunks_per_step": 20,
+        "below_threshold": false
+      }
+    ],
+    "baseline_tps": 30.402015287587805,
+    "stress_threshold_tps": 25.841712994449633,
+    "stress_threshold_tokens": 9843,
+    "first_stressed_config": null,
+    "last_normal_config": "chunks20_tok400"
+  },
+  "calibration_config": {
+    "stress_percentile": 0.85,
+    "min_sessions": 10,
+    "kv_config": "chunks3_tok256",
+    "baseline_config": "chunks0_tok256"
+  }
+}

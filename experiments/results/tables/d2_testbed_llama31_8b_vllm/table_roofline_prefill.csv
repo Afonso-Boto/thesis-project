@@ -1,0 +1,10 @@
+config_label,prefill_tokens_mean,arithmetic_intensity,bottleneck,achieved_tflops,pct_compute_ceiling
+chunks0_tok256,203,203,compute,42.9,61%
+chunks3_tok256,971,963,compute,59.8,85%
+chunks3_tok400,1403,1387,compute,63.6,91%
+chunks5_tok256,1483,1465,compute,63.5,91%
+chunks5_tok400,2203,2164,compute,61.9,88%
+chunks10_tok256,2763,2702,compute,61.7,88%
+chunks10_tok400,4203,4064,compute,61.0,87%
+chunks20_tok256,5323,5101,compute,60.2,86%
+chunks20_tok400,8203,7688,compute,58.3,83%

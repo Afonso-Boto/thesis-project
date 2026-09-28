@@ -1,0 +1,7 @@
+config_label,n_star_empirical,occupancy_at_n_star,recasens_ref,delta_from_ref,verdict
+batch_chunks0_tok400,—,—,0.45,—,no plateau
+batch_chunks10_tok400,8,0.719,0.45,0.269,above 40–50%
+batch_chunks20_tok400,4,0.652,0.45,0.202,above 40–50%
+batch_chunks3_tok400,32,0.937,0.45,0.487,above 40–50%
+batch_chunks5_tok400,16,0.821,0.45,0.371,above 40–50%
+ALL (plateaued),n=4,0.782,0.45,0.332,range 0.652–0.937

@@ -1,0 +1,6 @@
+config,occ_at_entry,occ_at_within_max,occ_deep_pilot_step,entry_delta_vs_045
+batch_chunks3_tok400,0.791,0.861,0.937,+0.341
+batch_chunks5_tok400,0.889,0.863,0.821,+0.439
+batch_chunks10_tok400,0.707,0.680,0.719,+0.257
+batch_chunks20_tok400,0.443,0.526,0.652,-0.007
+mean,0.708,,,

@@ -1,0 +1,5 @@
+config,n_star_step_pilot,n_star_bp,bp_r_squared,within_max_level,n_star_analytical,ana_over_entry,bp_tps_at_knee
+batch_chunks3_tok400,32,22.1,0.9908,24,12,0.54,273.7
+batch_chunks5_tok400,16,17.1,0.9940,16,8,0.47,181.8
+batch_chunks10_tok400,8,7.2,0.8191,7,4,0.56,93.1
+batch_chunks20_tok400,4,2.5,0.5000,3,2,0.80,48.0

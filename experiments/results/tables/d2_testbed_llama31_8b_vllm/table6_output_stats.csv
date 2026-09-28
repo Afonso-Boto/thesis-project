@@ -1,0 +1,6 @@
+output_tokens_plan,n,prefill_ms_mean,decode_ms_mean,ratio_mean,ratio_std,regime
+50,30,1111.3,1674.4,1.507,0.016,decode-bound
+200,30,1111.1,6814.9,6.134,0.064,decode-bound
+500,30,1110.9,17118.1,15.411,0.164,decode-bound
+1000,30,1110.9,34379.9,30.950,0.312,decode-bound
+2000,30,1111.5,69055.0,62.133,0.637,decode-bound

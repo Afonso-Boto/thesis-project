@@ -1,0 +1,6 @@
+config_label,n_star_empirical,n_star_analytical,emp_ana_ratio,max_tps,p95_latency_at_n_star,concurrency_levels_tested
+batch_chunks0_tok400,—,76,—,1259.9,—,7
+batch_chunks10_tok400,8,4,2.00,120.0,19.021,7
+batch_chunks20_tok400,4,2,2.00,60.0,18.785,7
+batch_chunks3_tok400,32,12,2.67,268.0,27.219,7
+batch_chunks5_tok400,16,8,2.00,192.0,19.080,7

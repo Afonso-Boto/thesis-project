@@ -1,0 +1,58 @@
+============================================================
+E-Layer Calibration Report
+Regime:    d2_testbed_llama31_8b_vllm
+Timestamp: 2026-07-01T12:42:23.687139
+Sessions:  900 calibrated, 0 failed
+============================================================
+
+── Baseline throughput ──────────────────────────────
+  Config:       chunks3_tok256
+  Baseline TPS: 30.40 tokens/second
+  Stress threshold: < 25.84 tok/s
+
+── Stress threshold ─────────────────────────────────
+  Stress onset: 9,843 tokens
+  Last normal config:  chunks20_tok400
+  First stressed config: None
+
+── Throughput curve ─────────────────────────────────
+  ✓ normal   chunks0_tok256            prefill=   203  tps=  30.4  n=100
+  ✓ normal   chunks3_tok256            prefill=   971  tps=  30.3  n=100
+  ✓ normal   chunks3_tok400            prefill=  1403  tps=  30.0  n=100
+  ✓ normal   chunks5_tok256            prefill=  1483  tps=  30.0  n=100
+  ✓ normal   chunks5_tok400            prefill=  2203  tps=  29.9  n=100
+  ✓ normal   chunks10_tok256           prefill=  2763  tps=  29.6  n=100
+  ✓ normal   chunks10_tok400           prefill=  4203  tps=  29.4  n=100
+  ✓ normal   chunks20_tok256           prefill=  5323  tps=  29.0  n=100
+  ✓ normal   chunks20_tok400           prefill=  8203  tps=  28.5  n=100
+
+── Prefill regression ───────────────────────────────
+  prefill_time_ms = 0.2741 × prefill_tokens + -21.0
+  R² = 0.9985  N = 900
+  linear fit expected (compute-bound prefill). R² < 0.9 may indicate memory pressure at high context lengths.
+
+── Decode throughput ────────────────────────────────
+  Mean TPS: 29.67 ± 0.59
+  CV: 0.02  N: 900
+  TPS vs prefill slope: -0.000247  R²: 0.9855
+  tps should be approximately constant (memory-bound decode). Negative slope vs prefill length indicates memory pressure.
+
+── Per-config summary ───────────────────────────────
+  chunks0_tok256            n=100  prefill_tokens=   203  prefill_ms=   76.0  tps=  30.4
+  chunks3_tok256            n=100  prefill_tokens=   971  prefill_ms=  260.6  tps=  30.3
+  chunks3_tok400            n=100  prefill_tokens=  1403  prefill_ms=  354.4  tps=  30.0
+  chunks5_tok256            n=100  prefill_tokens=  1483  prefill_ms=  375.1  tps=  30.0
+  chunks5_tok400            n=100  prefill_tokens=  2203  prefill_ms=  571.2  tps=  29.9
+  chunks10_tok256           n=100  prefill_tokens=  2763  prefill_ms=  719.6  tps=  29.6
+  chunks10_tok400           n=100  prefill_tokens=  4203  prefill_ms= 1107.4  tps=  29.4
+  chunks20_tok256           n=100  prefill_tokens=  5323  prefill_ms= 1421.2  tps=  29.0
+  chunks20_tok400           n=100  prefill_tokens=  8203  prefill_ms= 2260.7  tps=  28.5
+
+── Next steps ───────────────────────────────────────
+  1. Review throughput curve — confirm stress threshold location
+  2. If stress threshold looks wrong, re-run with --stress-percentile
+  3. Run memory labeling: assign_memory_behavior_labels()
+     (done automatically if --label-memory flag is set)
+  4. Proceed to batch experiments:
+     python experiments/batch/batch_grid.py --regime <regime>
+============================================================

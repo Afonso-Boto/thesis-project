@@ -1,0 +1,54 @@
+{
+  "experiment_name": "batch_mix_d2_testbed_llama31_8b_vllm_20260719_144639",
+  "config_label": "batch_mixstoch_chunks3_tok400+chunks10_tok400",
+  "regime_id": "d2_testbed_llama31_8b_vllm",
+  "mix_mode": "stochastic",
+  "profiles": {
+    "A": "batch_chunks3_tok400",
+    "B": "batch_chunks10_tok400"
+  },
+  "grid": [
+    8
+  ],
+  "duration_s": 120.0,
+  "sub_window_s": 10.0,
+  "pool_size": 64,
+  "warmup_per_profile": 2,
+  "resolved_gauges": {
+    "kv": "vllm:kv_cache_usage_perc",
+    "running": "vllm:num_requests_running",
+    "waiting": "vllm:num_requests_waiting"
+  },
+  "baseline_tps": 30.402015287587805,
+  "kv_per_session_bytes": {
+    "A": 188874752.0,
+    "B": 555876352.0,
+    "mean": 372375552.0
+  },
+  "kv_cache_capacity_bytes": 5362417664,
+  "ex_ante_predictions": {
+    "occupancy_composition_knee": 11.923666314677932,
+    "occ_mix_interpolated": 0.8280000000000001,
+    "harmonic_composition_knee": 12.8,
+    "inputs": {
+      "n_star_a": 32,
+      "n_star_b": 8,
+      "occ_a": 0.937,
+      "occ_b": 0.719
+    }
+  },
+  "started_at": "2026-07-19T14:47:14.017632",
+  "completed_at": "2026-07-19T14:49:15.654001",
+  "step_knee_per_session_criterion": null,
+  "levels_summary": [
+    {
+      "concurrency_n": 8,
+      "aggregate_tps": 116.3604894739699,
+      "aggregate_tps_a": 61.816559395164774,
+      "aggregate_tps_b": 54.54393007880515,
+      "kv_usage_mean": 0.5203170913840228,
+      "kv_usage_peak": 0.7296557120500782,
+      "engine_running_mean": 7.489083280850767
+    }
+  ]
+}

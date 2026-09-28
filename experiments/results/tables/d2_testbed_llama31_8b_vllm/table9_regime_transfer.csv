@@ -1,0 +1,3 @@
+regime,prefill_slope_ms_per_token,prefill_r_squared,decode_tps_mean,stress_threshold_tokens,n_sessions
+D1 (Apple M1 Pro + Ollama),0.274061,0.9985,29.7,9843,900
+D2 (NVIDIA GPU + vLLM),0.274061,0.9985,29.7,9843,900

@@ -1,0 +1,10 @@
+config_label,tokens,actual_ms,predicted_ms,pct_error,regime
+chunks0_tok256,203,76.0,20.2,73.50%,overhead-dominated
+chunks3_tok256,971,260.6,241.7,7.26%,overhead-dominated
+chunks3_tok400,1403,354.4,365.4,3.12%,compute-bound
+chunks5_tok256,1483,375.1,387.5,3.32%,compute-bound
+chunks5_tok400,2203,571.2,584.6,2.35%,compute-bound
+chunks10_tok256,2763,719.6,738.6,2.65%,compute-bound
+chunks10_tok400,4203,1107.4,1135.2,2.51%,compute-bound
+chunks20_tok256,5323,1421.2,1443.1,1.54%,compute-bound
+chunks20_tok400,8203,2260.7,2168.5,4.08%,compute-bound

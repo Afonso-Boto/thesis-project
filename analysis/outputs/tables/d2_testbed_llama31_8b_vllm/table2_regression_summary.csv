@@ -1,0 +1,6 @@
+model,x,y,slope,intercept,r_squared,mape_pct,slope_95_ci,n
+Prefill latency (D1),prefill_tokens_plan,prefill_time_ms,—,—,—,—,—,—
+Decode throughput (D1),prefill_tokens_plan,tokens_per_second,—,—,—,—,—,—
+Schema injection,schema_tokens_total,prefill_time_ms,—,—,—,—,—,—
+Output ratio,output_tokens_plan,decode_prefill_ratio,—,—,—,—,—,—
+Prefill latency (D2),prefill_tokens_plan,prefill_time_ms,—,—,—,—,—,—

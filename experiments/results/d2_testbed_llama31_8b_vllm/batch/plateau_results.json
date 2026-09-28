@@ -1,0 +1,194 @@
+{
+  "regime_id": "d2_testbed_llama31_8b_vllm",
+  "baseline_tps": 30.4020152875878,
+  "plateau_threshold": 0.05,
+  "plateau_fraction_used": 0.45,
+  "plateau_results": [
+    {
+      "config_label": "batch_chunks0_tok400",
+      "chunks_per_step": 0,
+      "n_star_empirical": null,
+      "n_star_analytical": 76,
+      "analytical_empirical_ratio": null,
+      "plateau_reached": false,
+      "concurrency_levels": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "throughput_tps_per_level": [
+        30.0,
+        53.33,
+        106.65,
+        213.24,
+        373.07,
+        639.03,
+        1259.92
+      ],
+      "marginal_gain_fractions": [
+        0.7674,
+        1.7539,
+        3.506,
+        5.2574,
+        8.748,
+        20.4228,
+        0.0
+      ],
+      "elapsed_s": 602.5,
+      "notes": "Plateau not reached within tested range (max concurrency_n=64). Extend concurrency grid to higher values."
+    },
+    {
+      "config_label": "batch_chunks3_tok400",
+      "chunks_per_step": 3,
+      "n_star_empirical": 32,
+      "n_star_analytical": 12,
+      "analytical_empirical_ratio": 2.6666666666666665,
+      "plateau_reached": true,
+      "concurrency_levels": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "throughput_tps_per_level": [
+        26.66,
+        46.65,
+        93.27,
+        159.99,
+        255.96,
+        267.99,
+        267.98
+      ],
+      "marginal_gain_fractions": [
+        0.6574,
+        1.5336,
+        2.1946,
+        3.1568,
+        0.3955,
+        -0.0002,
+        0.0
+      ],
+      "elapsed_s": 635.9,
+      "notes": ""
+    },
+    {
+      "config_label": "batch_chunks5_tok400",
+      "chunks_per_step": 5,
+      "n_star_empirical": 16,
+      "n_star_analytical": 8,
+      "analytical_empirical_ratio": 2.0,
+      "plateau_reached": true,
+      "concurrency_levels": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "throughput_tps_per_level": [
+        26.66,
+        46.64,
+        79.91,
+        135.99,
+        191.98,
+        187.99,
+        191.99
+      ],
+      "marginal_gain_fractions": [
+        0.6573,
+        1.0942,
+        1.8448,
+        1.8414,
+        -0.1312,
+        0.1316,
+        0.0
+      ],
+      "elapsed_s": 697.5,
+      "notes": ""
+    },
+    {
+      "config_label": "batch_chunks10_tok400",
+      "chunks_per_step": 10,
+      "n_star_empirical": 8,
+      "n_star_analytical": 4,
+      "analytical_empirical_ratio": 2.0,
+      "plateau_reached": true,
+      "concurrency_levels": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "throughput_tps_per_level": [
+        23.33,
+        39.98,
+        75.99,
+        119.98,
+        91.99,
+        95.99,
+        99.99
+      ],
+      "marginal_gain_fractions": [
+        0.5477,
+        1.1844,
+        1.4469,
+        -0.9206,
+        0.1314,
+        0.1319,
+        0.0
+      ],
+      "elapsed_s": 822.4,
+      "notes": ""
+    },
+    {
+      "config_label": "batch_chunks20_tok400",
+      "chunks_per_step": 20,
+      "n_star_empirical": 4,
+      "n_star_analytical": 2,
+      "analytical_empirical_ratio": 2.0,
+      "plateau_reached": true,
+      "concurrency_levels": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "throughput_tps_per_level": [
+        19.99,
+        40.0,
+        60.0,
+        44.0,
+        44.0,
+        48.0,
+        52.0
+      ],
+      "marginal_gain_fractions": [
+        0.658,
+        0.6578,
+        -0.5262,
+        0.0,
+        0.1316,
+        0.1316,
+        0.0
+      ],
+      "elapsed_s": 1087.8,
+      "notes": ""
+    }
+  ],
+  "produced_at": "2026-06-30T22:34:50.954389"
+}

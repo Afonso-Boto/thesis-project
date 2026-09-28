@@ -1,0 +1,17 @@
+config_label,num_tools,schema_tokens_per_tool,schema_tokens_total,n,prefill_ms_mean,prefill_ms_std,prefill_tokens_mean
+tools0_schematok0,0,—,0,30,75.8,9.98,204
+tools1_schematok50,1,—,50,30,97.6,15.65,254
+tools1_schematok150,1,—,150,30,120.7,11.38,354
+tools3_schematok50,3,—,150,30,121.7,11.90,354
+tools5_schematok50,5,—,250,30,141.4,3.59,454
+tools1_schematok300,1,—,300,30,151.1,9.85,504
+tools3_schematok150,3,—,450,30,190.4,3.25,654
+tools10_schematok50,10,—,500,30,194.1,2.44,704
+tools5_schematok150,5,—,750,30,256.4,16.30,954
+tools3_schematok300,3,—,900,30,283.1,8.53,1104
+tools20_schematok50,20,—,1000,30,314.5,0.99,1204
+tools10_schematok150,10,—,1500,30,437.6,3.60,1704
+tools5_schematok300,5,—,1500,30,437.4,3.60,1704
+tools10_schematok300,10,—,3000,30,833.5,15.94,3204
+tools20_schematok150,20,—,3000,30,833.7,15.96,3204
+tools20_schematok300,20,—,6000,30,1698.6,5.60,6204

@@ -1,0 +1,50 @@
+{
+  "experiment_name": "runtime_grid_d2_testbed_llama31_8b_vllm_20260719_122616",
+  "experiment_family": "e_runtime_calibration",
+  "regime_id": "d2_testbed_llama31_8b_vllm",
+  "regime_metadata": {
+    "regime_id": "d2_testbed_llama31_8b_vllm",
+    "model_name": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "model_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+    "tokenizer_name": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "dtype": "float16",
+    "quantization": "none",
+    "num_layers": 32,
+    "num_key_value_heads": 8,
+    "head_dim": 128,
+    "kv_bytes_per_token": 131072,
+    "hardware_name": "NVIDIA A10G 24GB GDDR6 (AWS EC2 g5.xlarge)",
+    "device_type": "cuda",
+    "vram_gb": 24.0,
+    "runtime_name": "vllm",
+    "runtime_version": "0.23.0",
+    "scheduler_policy": "continuous_batching",
+    "max_batch_size": 32,
+    "chunked_prefill_enabled": true,
+    "context_strategy": "centralized",
+    "max_context_tokens": 16384
+  },
+  "runtime_info": {},
+  "grid_config_labels": [
+    "chunks10_tok400"
+  ],
+  "n_override": 30,
+  "pause_s": 1.0,
+  "started_at": "2026-07-19T12:26:17.336560",
+  "config_summaries": [
+    {
+      "config_label": "chunks10_tok400",
+      "sessions_run": 30,
+      "sessions_completed": 30,
+      "sessions_failed": 0,
+      "n_overflow": 0,
+      "n_gen_failed": 0,
+      "elapsed_s": 270.1
+    }
+  ],
+  "last_updated": "2026-07-19T12:30:47.423762",
+  "completed_at": "2026-07-19T12:30:47.426161",
+  "total_elapsed_s": 270.1,
+  "total_sessions_completed": 30,
+  "total_sessions_failed": 0
+}

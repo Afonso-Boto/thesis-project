@@ -1,0 +1,7 @@
+config,turn,tokens_approx,mape_pct,median_pct,max_pct,n,regime
+chunks10_tok400,1,4200,1.28,1.45,2.32,30,interpolation
+chunks10_tok400,2,8600,4.13,4.14,4.52,30,extrapolation
+chunks10_tok400,3,12900,9.72,9.76,10.17,30,extrapolation
+chunks5_tok400,1,2200,1.66,1.82,2.66,30,interpolation
+chunks5_tok400,2,4500,0.97,0.92,1.81,30,interpolation
+chunks5_tok400,3,6800,1.22,1.28,1.89,30,interpolation

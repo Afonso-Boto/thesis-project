@@ -1,0 +1,11 @@
+{
+  "regime_id": "d2_testbed_llama31_8b_vllm",
+  "config_label": "chunks3_tok256",
+  "baseline_tps": 30.402015287587805,
+  "stress_threshold_context_tokens": 9843,
+  "stress_threshold_kv_util_pct": null,
+  "n_sessions_calibrated": 900,
+  "n_sessions_failed": 0,
+  "calibration_timestamp": "2026-07-01T12:42:23.687139",
+  "notes": "Calibrated from 900 sessions across 9 config points. Stress percentile: 0.85. Baseline config: chunks0_tok256."
+}

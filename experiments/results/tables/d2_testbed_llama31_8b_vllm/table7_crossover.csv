@@ -1,0 +1,2 @@
+regime_id,crossover_analytical,crossover_empirical,model_slope,model_intercept,model_r_squared,interpretation
+d2_testbed_llama31_8b_vllm,35,not observed,0.031098,-0.0964,0.9998,Workload becomes decode-bound above ~35 output tokens

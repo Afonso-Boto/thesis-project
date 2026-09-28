@@ -1,0 +1,74 @@
+{
+  "experiment_name": "batch_mix_d2_testbed_llama31_8b_vllm_20260719_155052",
+  "config_label": "batch_refine_chunks3_tok400",
+  "regime_id": "d2_testbed_llama31_8b_vllm",
+  "mix_mode": "single",
+  "profiles": {
+    "A": "batch_chunks3_tok400",
+    "B": "batch_chunks3_tok400"
+  },
+  "grid": [
+    24,
+    28,
+    32
+  ],
+  "duration_s": 120.0,
+  "sub_window_s": 10.0,
+  "pool_size": 64,
+  "warmup_per_profile": 2,
+  "resolved_gauges": {
+    "kv": "vllm:kv_cache_usage_perc",
+    "running": "vllm:num_requests_running",
+    "waiting": "vllm:num_requests_waiting"
+  },
+  "baseline_tps": 30.402015287587805,
+  "kv_per_session_bytes": {
+    "A": 188874752.0,
+    "B": 188874752.0,
+    "mean": 188874752.0
+  },
+  "kv_cache_capacity_bytes": 5362417664,
+  "ex_ante_predictions": {
+    "occupancy_composition_knee": 23.508074947952814,
+    "occ_mix_interpolated": 0.8280000000000001,
+    "harmonic_composition_knee": 12.8,
+    "inputs": {
+      "n_star_a": 32,
+      "n_star_b": 8,
+      "occ_a": 0.937,
+      "occ_b": 0.719
+    }
+  },
+  "started_at": "2026-07-19T15:51:07.815185",
+  "completed_at": "2026-07-19T15:57:38.567272",
+  "step_knee_per_session_criterion": 28,
+  "levels_summary": [
+    {
+      "concurrency_n": 24,
+      "aggregate_tps": 272.71638403773875,
+      "aggregate_tps_a": 272.71638403773875,
+      "aggregate_tps_b": 0.0,
+      "kv_usage_mean": 0.8610079641951135,
+      "kv_usage_peak": 0.9667449139280125,
+      "engine_running_mean": 22.849683963994803
+    },
+    {
+      "concurrency_n": 28,
+      "aggregate_tps": 263.62745061410806,
+      "aggregate_tps_a": 263.62745061410806,
+      "aggregate_tps_b": 0.0,
+      "kv_usage_mean": 0.9340948178048755,
+      "kv_usage_peak": 1.0,
+      "engine_running_mean": 24.865439113132574
+    },
+    {
+      "concurrency_n": 32,
+      "aggregate_tps": 263.62759408963313,
+      "aggregate_tps_a": 263.62759408963313,
+      "aggregate_tps_b": 0.0,
+      "kv_usage_mean": 0.9285279314046004,
+      "kv_usage_peak": 1.0,
+      "engine_running_mean": 24.73957439251309
+    }
+  ]
+}

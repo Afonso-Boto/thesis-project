@@ -1,0 +1,68 @@
+{
+  "per_turn": [
+    {
+      "config_label": "chunks10_tok400",
+      "step_index": 1,
+      "extrapolation": false,
+      "n": 30,
+      "mape_pct": 1.28,
+      "median_pct": 1.45,
+      "max_pct": 2.32
+    },
+    {
+      "config_label": "chunks10_tok400",
+      "step_index": 2,
+      "extrapolation": true,
+      "n": 30,
+      "mape_pct": 4.13,
+      "median_pct": 4.14,
+      "max_pct": 4.52
+    },
+    {
+      "config_label": "chunks10_tok400",
+      "step_index": 3,
+      "extrapolation": true,
+      "n": 30,
+      "mape_pct": 9.72,
+      "median_pct": 9.76,
+      "max_pct": 10.17
+    },
+    {
+      "config_label": "chunks5_tok400",
+      "step_index": 1,
+      "extrapolation": false,
+      "n": 30,
+      "mape_pct": 1.66,
+      "median_pct": 1.82,
+      "max_pct": 2.66
+    },
+    {
+      "config_label": "chunks5_tok400",
+      "step_index": 2,
+      "extrapolation": false,
+      "n": 30,
+      "mape_pct": 0.97,
+      "median_pct": 0.92,
+      "max_pct": 1.81
+    },
+    {
+      "config_label": "chunks5_tok400",
+      "step_index": 3,
+      "extrapolation": false,
+      "n": 30,
+      "mape_pct": 1.22,
+      "median_pct": 1.28,
+      "max_pct": 1.89
+    }
+  ],
+  "experiment_name": "k3_validation_d2_testbed_llama31_8b_vllm_20260719_134837",
+  "regime_id": "d2_testbed_llama31_8b_vllm",
+  "K": 3,
+  "n_per_config": 30,
+  "model_coefficients": {
+    "slope_ms_per_token": 0.274143,
+    "intercept_ms": -20.964
+  },
+  "calib_max_tokens": 8203,
+  "completed_at": "2026-07-19T14:16:16.239459"
+}

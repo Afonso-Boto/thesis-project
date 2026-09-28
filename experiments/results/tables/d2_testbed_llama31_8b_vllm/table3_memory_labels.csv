@@ -1,0 +1,10 @@
+config_label,n_total,n_normal,pct_normal,n_stressed,pct_stressed,n_failed,pct_failed,dominant_label
+chunks0_tok256,100,100,100.0%,0,0.0%,0,0.0%,normal
+chunks3_tok256,100,100,100.0%,0,0.0%,0,0.0%,normal
+chunks3_tok400,100,100,100.0%,0,0.0%,0,0.0%,normal
+chunks5_tok256,100,100,100.0%,0,0.0%,0,0.0%,normal
+chunks5_tok400,100,100,100.0%,0,0.0%,0,0.0%,normal
+chunks10_tok256,100,100,100.0%,0,0.0%,0,0.0%,normal
+chunks10_tok400,100,100,100.0%,0,0.0%,0,0.0%,normal
+chunks20_tok256,100,100,100.0%,0,0.0%,0,0.0%,normal
+chunks20_tok400,100,100,100.0%,0,0.0%,0,0.0%,normal

@@ -1,0 +1,7 @@
+quantity,value,error_vs_measured_pct
+measured entry knee,8.8,
+"frozen: harmonic (basis 13,6)",8.2,-6.8
+frozen: occ-composition,6.79,-22.8
+post-hoc: KV-composition (final knees),11.2,+27.3
+post-hoc: harmonic (final knees),10.9,+23.9
+occ at entry / deep (within-max),0.588 / 0.904,

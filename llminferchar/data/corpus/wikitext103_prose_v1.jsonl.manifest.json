@@ -1,0 +1,19 @@
+{
+  "source_id": "wikitext103_prose_v1",
+  "source": "WikiText-103 raw (Salesforce/wikitext, wikitext-103-raw-v1, train split)",
+  "license": "CC BY-SA 3.0 (derived from English Wikipedia)",
+  "builder_version": "1.0",
+  "built_at": "2026-07-19T12:13:19.446943+00:00",
+  "filters": {
+    "min_chars": 300,
+    "max_chars": 1400,
+    "min_letter_frac": 0.82,
+    "ends_with_sentence_punct": true,
+    "headings_dropped": true,
+    "artifacts_unescaped": true,
+    "dedup": "exact"
+  },
+  "seed": 7,
+  "n_paragraphs": 2000,
+  "sha256": "540933f6951b9d34ded4a6af542f3baf289ddb3f38c0e8d625797c2baf7d806e"
+}

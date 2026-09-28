@@ -1,0 +1,65 @@
+{
+  "experiment_name": "output_variation_d2_testbed_llama31_8b_vllm_20260630_194902",
+  "experiment_family": "o_spec_variation",
+  "domain": "Domain 4 \u2014 O_spec variation",
+  "regime_id": "d2_testbed_llama31_8b_vllm",
+  "scientific_framing": "Characterises the prefill-bound to decode-bound transition. C_aug fixed at chunks10_tok400 (~4,200 prefill tokens). output_length varies from 50 to 2,000 tokens. Key metric: decode_time_s / prefill_time_s ratio across configs. Grounded in Jiang et al. (2025) workload heterogeneity finding.",
+  "started_at": "2026-06-30T19:49:03.412186",
+  "config_summaries": [
+    {
+      "config_label": "output50_chunks10_tok400",
+      "output_length_mean": 50.0,
+      "aug_tokens": 4000.0,
+      "prefill_mean": 4192.0,
+      "sessions_run": 30,
+      "sessions_completed": 30,
+      "sessions_failed": 0,
+      "elapsed_s": 113.7
+    },
+    {
+      "config_label": "output200_chunks10_tok400",
+      "output_length_mean": 200.0,
+      "aug_tokens": 4000.0,
+      "prefill_mean": 4192.0,
+      "sessions_run": 30,
+      "sessions_completed": 30,
+      "sessions_failed": 0,
+      "elapsed_s": 267.9
+    },
+    {
+      "config_label": "output500_chunks10_tok400",
+      "output_length_mean": 500.0,
+      "aug_tokens": 4000.0,
+      "prefill_mean": 4192.0,
+      "sessions_run": 30,
+      "sessions_completed": 30,
+      "sessions_failed": 0,
+      "elapsed_s": 577.0
+    },
+    {
+      "config_label": "output1000_chunks10_tok400",
+      "output_length_mean": 1000.0,
+      "aug_tokens": 4000.0,
+      "prefill_mean": 4192.0,
+      "sessions_run": 30,
+      "sessions_completed": 30,
+      "sessions_failed": 0,
+      "elapsed_s": 1094.9
+    },
+    {
+      "config_label": "output2000_chunks10_tok400",
+      "output_length_mean": 2000.0,
+      "aug_tokens": 4000.0,
+      "prefill_mean": 4192.0,
+      "sessions_run": 30,
+      "sessions_completed": 30,
+      "sessions_failed": 0,
+      "elapsed_s": 2135.2
+    }
+  ],
+  "last_updated": "2026-06-30T20:58:52.129702",
+  "completed_at": "2026-06-30T20:58:52.132009",
+  "total_elapsed_s": 4188.7,
+  "total_sessions_completed": 150,
+  "total_sessions_failed": 0
+}
